@@ -8,7 +8,10 @@ void matrix(int d[], int num) {
 
     // Initialize m and s matrices
     for (i = 1; i < num; i++) {
-        m[i][i] = 0;
+        for(j=0;j < num; j++){
+            m[i][j] = 0;
+            s[i][j] = 0;
+        }
     }
 
     // Calculate minimum multiplications & optimal split points
@@ -17,7 +20,7 @@ void matrix(int d[], int num) {
             j = i + l - 1;
             m[i][j] = INT_MAX;
 
-            for (k = i; k <= j - 1; k++) {
+            for (k = i; k < j; k++) {
                 q = m[i][k] + m[k + 1][j] + d[i - 1] * d[k] * d[j];
                 if (q < m[i][j]) {
                     m[i][j] = q;
@@ -28,9 +31,10 @@ void matrix(int d[], int num) {
     }
 
     //print minimum scelar multiplications
+    printf("Minimum Scelar Multiplications:\n");
     for (i = 1; i < num; i++) {
         for (j = 1; j < num; j++) {
-            printf("M%d%d (value=%d) ", i, j, m[i][j]);
+            printf("%d ", m[i][j]);
         }
         printf("\n");
     }
@@ -38,7 +42,7 @@ void matrix(int d[], int num) {
     printf("Optimal Split Points:\n");
     for (i = 1; i < num; i++) {
         for (j = 1; j < num; j++) {
-            printf("M%d%d (k=%d) ", i, j, s[i][j]);
+            printf("%d ", s[i][j]);
         }
         printf("\n");
     }
