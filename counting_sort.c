@@ -8,7 +8,6 @@ void counting_sort(int arr[],int max,int num)
 	for(int i=1;i<=max;i++)
 	{
 		c[i]=0;
-        b[i]=0;
 	}
 	for(int i=1;i<=num;i++)
 	{
