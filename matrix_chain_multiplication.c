@@ -7,7 +7,7 @@ void matrix(int d[], int num) {
     int s[num][num]; // Matrix to store the optimal split points
 
     // Initialize m and s matrices
-    for (i = 1; i < num; i++) {
+    for (i = 0; i < num; i++) {
         for(j=0;j < num; j++){
             m[i][j] = 0;
             s[i][j] = 0;
