@@ -76,6 +76,3 @@ int main()
     knapsack(num1,num2,profit,weight);
     return 0;
 }
-
-
-//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
