@@ -7,7 +7,7 @@ void multiplication(int A[10][10],int B[10][10],int r1,int c2,int c1);
 int main()
 {
     int r1,c1,r2,c2,i,j,ch;
-    printf("ENTER THE NUMBER OF ROWS AND COLUMNS IN 1ST ARRY");
+    printf("ENTER THE NUMBER OF ROWS AND COLUMNS IN 1ST ARRAY");
     scanf("%d%d",&r1,&c1);
     printf("ENTER THE ROWS AND COLUMNS IN 2ND ARRAY");
     scanf("%d%d",&r2,&c2);
@@ -92,7 +92,7 @@ int main()
     		case 2:
                 if(c1!=r2)
                     {
-                        printf("\n YOUR ARRAY CANNOT BE MULTIPLIABLE");
+                        printf("\n YOUR ARRAY CANNOT BE MULTIPLIED");
                         exit(1);
                     }
                 else 
