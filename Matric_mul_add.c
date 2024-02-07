@@ -7,9 +7,9 @@ void multiplication(int A[10][10],int B[10][10],int r1,int c2,int c1);
 int main()
 {
     int r1,c1,r2,c2,i,j,ch;
-    printf("ENTER THE NUMBER OF ROWS AND COLUMNS IN 1ST ARRAY");
+    printf("ENTER THE NUMBER OF ROWS AND COLUMNS IN 1ST MATRIX");
     scanf("%d%d",&r1,&c1);
-    printf("ENTER THE ROWS AND COLUMNS IN 2ND ARRAY");
+    printf("ENTER THE ROWS AND COLUMNS IN 2ND MATRIX");
     scanf("%d%d",&r2,&c2);
     int A[10][10],B[10][10],C[10][10];
     
